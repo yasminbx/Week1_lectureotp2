@@ -9,6 +9,8 @@ public class LocalizedGreeting {
         System.out.println("1. English");
         System.out.println("2. Spanish");
         System.out.println("3. French");
+        System.out.println("4. Japanese");
+        System.out.println("5. Persian");
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
 
@@ -22,6 +24,12 @@ public class LocalizedGreeting {
                 break;
             case 3:
                 locale = new Locale("fr", "FR");
+                break;
+            case 4:
+                locale = new Locale("ja", "JP");
+                break;
+            case 5:
+                locale = new Locale("fa", "IR");
                 break;
             default:
                 System.out.println("Invalid Choice");
