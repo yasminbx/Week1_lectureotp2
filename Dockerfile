@@ -1,5 +1,5 @@
 FROM maven:latest
-
+LABEL authors="yasminbelhout"
 WORKDIR /app
 
 COPY pom.xml /app/
