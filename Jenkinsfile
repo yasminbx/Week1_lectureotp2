@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yasminbx/Week1_lectureotp2.git'
+                branch 'main', url: git 'https://github.com/yasminbx/Week1_lectureotp2.git'
             }
         }
         stage('Run Tests') {
