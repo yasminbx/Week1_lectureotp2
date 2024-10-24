@@ -23,7 +23,7 @@ pipeline {
         stage('Code Coverage') {
             steps {
                 // Generate Jacoco report after the tests have run
-                bat 'mvn jacoco:report'
+                sh 'mvn jacoco:report'
             }
         }
         stage('Publish Test Results') {

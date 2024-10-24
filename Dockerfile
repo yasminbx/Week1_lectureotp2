@@ -8,6 +8,6 @@ COPY . /app/
 
 RUN mvn package
 
-cmd ["java", "-jar", "target/test.jar"]
+CMD ["java", "-jar", "target/test.jar"]
 
 
