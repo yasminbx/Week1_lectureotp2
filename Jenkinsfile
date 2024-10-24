@@ -49,7 +49,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', env.DOCKERHUB_CREDENTIALS_ID) {
-                        docker.image("${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG}").push()
+                        docker.image("${env.yasminbx/lecturedemo1_v0}:${env.7cc77f180a03}").push()
                     }
                 }
             }
