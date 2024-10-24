@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // Run the tests first to generate data for Jacoco and JUnit
                
-                // sh 'mvn clean test'
+                 sh 'mvn clean test'
             }
         }
         stage('Code Coverage') {
